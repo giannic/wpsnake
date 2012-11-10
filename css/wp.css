@@ -1,0 +1,389 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url('../fonts/segoeui.ttf');
+}
+
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url('../fonts/segoeuib.ttf');
+}
+
+@font-face {
+    font-family: "Segoe UI Light";
+    src: url('../fonts/segoeuil.ttf');
+}
+
+@font-face {
+    font-family: "Segoe UI Italic";
+    src: url('../fonts/segoeuii.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Segoe UI Light","Segoe UI", Helvetica, Arial, Verdana, "Arial Unicode MS", Sans-Serif;
+    text-decoration: none;
+}
+
+html, body {
+    width: 960px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+/* default overrides */
+a {
+    color: #333333;
+}
+
+button {
+    border: none;
+    color: #FFFFFF;
+    background-color: #E51400;
+    font-family: "Segoe UI Light", "Segoe UI", Helvetica, Arial, Verdana, "Arial Unicode MS", Sans-Serif;
+}
+
+    button:hover {
+        cursor: pointer;
+    }
+
+/* snake */
+#grid {
+    float: right;
+    position: relative;
+    background-color: #FAFAFA;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    overflow: hidden;
+}
+
+    #grid #score {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        text-align: right;
+        z-index: 9999;
+    }
+
+    #grid .message {
+        position: absolute;
+        top: 280px;
+        display: block;
+        text-align: center;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    #grid .node {
+        position: absolute;
+        background-color: #E51400 !important;
+        background-size: 100%;
+    }
+
+    /* windows logo */
+    .tile-start-0 {
+        background-image: url('../img/tiles/windows.png');
+        /*background-image: url('http://i.microsoft.com/global/windowsphone/en-us/PublishingImages/sitepages/wp7/howtohome-site-windows-phone-logo.png');*/
+    }
+
+    /* phone */
+    .tile-start-1 {
+        background-image: url('../img/tiles/phone.png');
+        /*background-image: url('http://gethelp.live.com/Style%20Library/ZuneWP7Support/Images/tiles/wp_tiles/phone.png');*/
+    }
+
+    /* xbox live */
+    .tile-1 {
+        background-image: url('../img/tiles/xbox.png');
+        /*background-image: url('http://i.microsoft.com/global/windowsphone/en-us/PublishingImages/sitepages/wp7/xbox-site-article-image-xbox-live-logo.png');*/
+    }
+
+    /* marketplace */
+    .tile-2 {
+        background-image: url('../img/tiles/marketplace.png');
+    }
+
+    /* camera */
+    .tile-3 {
+        background-image: url('../img/tiles/camera.png');
+    }
+
+    /* office */
+    .tile-4 {
+        background-image: url('../img/tiles/office.png');
+    }
+
+    /* me */
+    .tile-5 {
+        background-image: url('../img/tiles/me.png');
+    }
+
+    /* people */
+    .tile-6 {
+        background-image: url('../img/tiles/people.png');
+    }
+
+    /* local scout */
+    .tile-7 {
+        background-image: url('../img/tiles/localscout.png');
+    }
+
+    /* settings */
+    .tile-8 {
+        background-image: url('../img/tiles/settings.png');
+    }
+
+    /* nokia */
+    .tile-9 {
+        background-image: url('../img/tiles/nokia.png');
+    }
+
+    /* bing */
+    .tile-10 {
+        background-image: url('../img/tiles/search.png');
+    }
+
+    /* internet explorer */
+    .tile-11 {
+        background-image: url('../img/tiles/ie.png');
+    }
+
+    /* leaping letters */
+    .tile-12 {
+        background-image: url('../img/tiles/leapingletters.png');
+    }
+
+    /* zune */
+    .tile-13 {
+        background-image: url('../img/tiles/zune.png');
+    }
+
+    /* email */
+    .tile-14 {
+        background-image: url('../img/tiles/email.png');
+    }
+
+    /* messaging */
+    .tile-15 {
+        background-image: url('../img/tiles/messaging.png');
+    }
+
+    /* security */
+    .tile-16 {
+        background-image: url('../img/tiles/security.png');
+    }
+
+    /* calendar */
+    .tile-17 {
+        background-image: url('../img/tiles/calendar.png');
+    }
+
+    /* contacts */
+    .tile-18 {
+        background-image: url('../img/tiles/contacts.png');
+    }
+
+    /* wireless */
+    .tile-19 {
+        background-image: url('../img/tiles/wifi.png');
+    }
+
+    /* music and video */
+    .tile-20 {
+        background-image: url('../img/tiles/music.png');
+    }
+
+    /* social network */
+    .tile-21 {
+        background-image: url('../img/tiles/social.png');
+    }
+
+/* header */
+#masthead {
+    position: relative;
+    height: 60px;
+    margin: 0px 0px 10px 0px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #DEDEDE;
+}
+
+    #masthead #logo {
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+    }
+
+    /* nav */
+    #masthead #nav {
+        position: absolute;
+        right: 0px;
+        bottom: 10px;
+    }
+
+        #masthead #nav li {
+            display: inline;
+            margin: 0px 0px 0px 10px;
+        }
+
+            #masthead #nav li a {
+                font-family: "Segoe UI", Helvetica, Arial, Verdana, "Arial Unicode MS", Sans-Serif;
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            #masthead #nav li a:hover {
+                color: #E51400 !important;
+            }
+
+/* content */
+#content {
+    float: right;
+    position: relative;
+    height: 600px;
+    width: 600px;
+    background-color: #FFFFFF;
+}
+
+    #content h1 {
+        margin: 0px 0px 0px 20px;
+    }
+
+#full-content {
+    position: relative;
+    width: 100%;
+}
+
+    #full-content .learn-more {
+        position: absolute;
+        bottom: 40px;
+        right: 50px;
+        height: 30px;
+        margin: 10px 0px 0px 10px;
+        padding: 0px 10px 0px 10px;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    #full-content .banner {
+        margin: 10px 0px 0px 0px;
+        border-style: solid;
+        border-color: #000000;
+        border-width: 1px 0px 1px 0px;
+    }
+
+/* sidebar */
+#sidebar {
+    float: left;
+    position: relative;
+}
+
+    #sidebar .info {
+        height: 460px;
+        width: 320px;
+        padding: 20px 20px 20px 20px;
+        overflow: hidden;
+    }
+
+        #sidebar .info .phone {
+            position: absolute;
+            top: 0px;
+            left: 30px;
+            z-index: -1;
+            width: 85%;
+        }
+
+        #sidebar .info .description {
+            position: absolute;
+            width: 240px;
+            height: 340px;
+            top: 120px;
+            left: 60px;
+            font-size: 14px;
+            color: #FFFFFF;
+        }
+
+            #sidebar .info .description #focus-text {
+
+            }
+
+            #sidebar .info .description #focus-tile {
+                float: left;
+                height: 100px;
+                width: 100px;
+                margin: 0px 10px 0px 0px;
+                background-size: 100%;
+            }
+
+    /* controls */
+    #sidebar .controls {
+        height: 110px;
+        width: 360px;
+        color: #E51400 !important;
+        background-color: #FFFFFF;
+    }
+
+        #sidebar .controls .game-button {
+            height: 30px;
+            margin: 10px 0px 0px 10px;
+            padding: 0px 10px 0px 10px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        #sidebar .controls .game-button .arrow {
+            vertical-align: bottom;
+            margin: 0px 0px 0px 5px;
+        }
+
+        #sidebar .controls ul {
+            list-style-type: none;
+            margin: 10px 0px 0px 10px;
+        }
+
+            #sidebar .controls ul li {
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 1px;
+            }
+
+/* footer */
+#footer {
+    clear: both;
+    position: relative;
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+    border-color: #DEDEDE;
+    margin: 20px 0px 0px 0px;
+}
+
+    #footer .credits {
+        float: left;
+        margin: 5px 0px 0px 5px;
+        font-size: 12px;
+        line-height: 18px;
+        list-style-type: none;
+    }
+
+        #footer .credits li {
+            display: inline;
+        }
+
+            #footer .credits li a {
+                color: #888888;
+            }
+
+            #footer .credits li a:hover {
+                color: #E51400;
+            }
+
+        #footer .credits .separator {
+            margin: 0px 7px 0px 7px;
+            color: #666666;
+        }
+
+    #footer #ms-logo {
+        float: right;
+        margin: 5px 5px 0px 0px;
+    }

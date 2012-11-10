@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Windows Phone | Snake</title>
+    <link rel="stylesheet" href="css/wp.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/description.js"></script>
+    <script src="js/linkedlist.js"></script>
+    <script src="js/snake.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="icon" type="image/ico" href="img/wp.ico">
+</head>
+<body>
+    <div id="masthead">
+        <img id="logo" alt="Windows Phone" src="img/wp-logo.png"/>
+        <ul id="nav">
+            <li><a href="spartan.html">Spartan</a></li>
+            <li><a href="banners.html">Banners</a></li>
+            <li><a href="learn.html">Learn</a></li>
+        </ul>
+    </div>
+
+    <!-- control and tutorial displays -->
+    <div id="sidebar">
+        <div class="info">
+            <img class="phone" src="img/Lumia900Front.jpg"/>
+            <div class="description">
+                <div id="focus-tile" class="tile-start-0"></div>
+                <span id="focus-text">Hello Windows Phone Enthusiast!<br/><br/>Learn how to use the Windows Phone through this Snake Game! Remember those high school days when you had your brick phone a.k.a the Nokia? Relive those days with Windows Phone! Learn the device's awesome tiles as the snake hits each tile. See how far you can go and how much you can learn!</span>
+            </div>
+        </div>
+        <div class="controls">
+            <button type="button" class="game-button" id="reset">Reset</button>
+            <button type="button" class="game-button" id="pause">Play/Pause<img class="arrow" src="img/arrow-icon.png"/></button>
+            <button type="button" class="game-button" id="toggle-pause">Pause on Tile</button>
+            <ul>
+                <li>Arrow keys to Move</li>
+                <li>R to Restart</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- snake bounds -->
+    <div id="grid">
+        <span id="score">0</span>
+    </div>
+    <div id="footer">
+        <img id="ms-logo" alt="Microsoft" src="img/ms-logo.png"/>
+    </div>
+</body>
+</html>
